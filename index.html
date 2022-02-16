@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="devchallenges.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <title>Ckeckout page - Devchallenges</title>
+
+
+</head>
+
+<body>
+
+  <div class="contenedor">
+    <h1>Checkout</h1>
+    <div class="contenedor__formulario">
+      <form action="" class="formulario">
+
+        <h3>Contact information</h3>
+
+        <div class="item--formulario">
+          <p>Email</p>
+          <div class="item--formulario__input">
+            <span class="material-icons">
+              email
+            </span>
+            <input type="email" placeholder="Enter your email..." required>
+          </div>
+        </div>
+
+        <div class="item--formulario">
+          <p>Phone</p>
+          <div class="item--formulario__input">
+            <span class="material-icons">
+              phone
+            </span>
+            <input type="text" placeholder="Enter your number..." required>
+          </div>
+        </div>
+
+
+
+
+        <h3 class="mt">Shipping address</h3>
+
+        <div class="item--formulario">
+          <p>Full name</p>
+          <div class="item--formulario__input">
+            <span class="material-icons">
+              <span class="material-icons">
+                account_circle
+              </span>
+            </span>
+            <input type="text" placeholder="Enter your fullname..." required>
+          </div>
+        </div>
+
+        <div class="item--formulario">
+          <p>Address</p>
+          <div class="item--formulario__input">
+            <span class="material-icons">
+              home
+            </span>
+            <input type="text" placeholder="Your address..." required>
+          </div>
+        </div>
+
+        <div class="item--formulario">
+          <p>City</p>
+          <div class="item--formulario__input">
+            <span class="material-icons">
+              location_city
+            </span>
+            <input type="text" placeholder="Your city..." required>
+          </div>
+        </div>
+
+        <div class="item--formulario--doble">
+          <div class="item--formulario">
+            <p>Country</p>
+            <div class="item--formulario__input">
+              <span class="material-icons">
+                public
+              </span>
+              <div class="select">
+                <select name="" id="">
+                  <option value="value1" selected>Your country..</option>
+                  <option value="value2">Mexico</option>
+                  <option value="value3">EUA</option>
+                  <option value="value4">France</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="item--formulario">
+            <p>Postal code</p>
+            <div class="item--formulario__input">
+              <span class="material-icons">
+                markunread_mailbox
+              </span>
+              <input type="text" placeholder="Your postal code..." required>
+            </div>
+          </div>
+
+
+        </div>
+
+        <label for="" class="checked"><input type="checkbox" name="" id=""> Save this information for next time</label>
+        <div class="item--formulario btn">
+          <button class="item--formulario__btn">Continue</button>
+        </div>
+
+
+
+
+      </form>
+
+
+      <div class="detalles">
+        <div class="productos">
+          <div class="detalles__prod mt-2">
+            <img src="img/photo1.png" alt="">
+            <div class="detalles__prod--info">
+              <p>Vintage Backbag</p>
+              <div class="detalles__prod--info--precio">
+                <p class="offer">$54.99</p>
+                <p class="old">$94.99</p>
+              </div>
+              <div class="detalles__prod--info-cantidad">
+                <button>-</button>
+                <p>1</p>
+                <button>+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="detalles__prod">
+            <img src="img/photo2.png" alt="">
+            <div class="detalles__prod--info">
+              <p>Levi Shoes</p>
+              <div class="detalles__prod--info--precio">
+                <p class="offer">$74.99</p>
+                <p class="old">$124.99</p>
+              </div>
+              <div class="detalles__prod--info-cantidad">
+                <button>-</button>
+                <p>1</p>
+                <button>+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detalles__precio--final">
+          <div class="shipping">
+            <div class="shipping--text">
+              <p>Shipping</p>
+              <p>$19</p>
+            </div>
+          </div>
+          <div class="total">
+            <div class="total--text">
+              <p>Total</p>
+              <p>$148.98</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>resolved by <a href="https://github.com/CalderonRigoberto">@CalderonRigoberto</a> - devChallenges.io</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>

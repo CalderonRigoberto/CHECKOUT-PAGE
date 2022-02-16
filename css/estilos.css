@@ -1,0 +1,375 @@
+:root {
+    /*TIPOGRAFÍA*/
+    --fMontserrat: "Montserrat";
+
+    /*COLORS*/
+    --naranja: #F2994A;
+    --colorText: #4E5150;
+}
+
+
+
+.contenedor {
+    margin: 2rem auto;
+    width: min(100% - 2rem, 60rem);
+}
+
+.contenedor h1 {
+    font-family: var(--fMontserrat);
+    font-weight: 600;
+    font-size: 2.25rem;
+    color: var(--colorText);
+    line-height: 43.88px;
+}
+
+.mt {
+    margin-top: 3.2rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.contenedor__formulario {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+
+
+.contenedor__formulario .formulario {
+    max-width: 465px;
+    width: 50%;
+}
+
+.contenedor__formulario .formulario h3 {
+    font-family: var(--fMontserrat);
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 22px;
+    color: #333333;
+}
+
+.contenedor__formulario .formulario .item--formulario {
+    width: 100%;
+}
+
+.contenedor__formulario .formulario .item--formulario p {
+
+    font-family: var(--fMontserrat);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+
+    /* identical to box height */
+
+    /* Gray 2 */
+    color: #4F4F4F;
+}
+
+
+
+.contenedor__formulario .formulario .item--formulario .item--formulario__input {
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 12px;
+    height: 56px;
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    padding: 20px 14px;
+    gap: .5rem;
+
+    font-family: var(--fMontserrat);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+}
+
+.contenedor__formulario .formulario .item--formulario .item--formulario__input span {
+    color: #828282;
+}
+
+.contenedor__formulario .formulario .item--formulario .item--formulario__input input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+}
+
+.contenedor__formulario .formulario .item--formulario--doble {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contenedor__formulario .formulario .item--formulario--doble .item--formulario {
+    width: 50%;
+}
+
+@media (max-width: 470px) {
+
+    .contenedor__formulario .formulario .item--formulario--doble .item--formulario .item--formulario__input input {
+        width: 100%;
+    }
+}
+
+select {
+    width: 100%;
+    color: #828282;
+    appearance: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: transparent;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #E0E0E0;
+    cursor: pointer;
+    pointer-events: none;
+
+}
+
+options {
+    font-family: var(--fMontserrat);
+    font-weight: 600;
+}
+
+.contenedor__formulario .formulario .checked {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font-family: var(--fMontserrat);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+
+    /* identical to box height */
+
+    /* Gray 2 */
+    color: #4F4F4F;
+    margin-bottom: 2rem;
+}
+
+.contenedor__formulario .formulario .checked input[type="checkbox"] {
+    width: 21px;
+    height: 21px;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 4px;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.contenedor__formulario .formulario .checked input[type="checkbox"]:checked {
+    background-image: url(../img/icons8-check-64.png);
+    background-color: #F2994A;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    transition: 1s all ease;
+}
+
+.contenedor__formulario .formulario .btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contenedor__formulario .formulario .item--formulario .item--formulario__btn {
+    width: 166px;
+    height: 54px;
+    /* Orange */
+    background: #F2994A;
+    border-radius: 12px;
+    border: none;
+    font-family: var(--fMontserrat);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.contenedor__formulario .formulario .item--formulario .item--formulario__btn:hover {
+    cursor: pointer;
+}
+
+
+.contenedor__formulario .detalles {
+    max-width: 383px;
+    width: 50%;
+    height: 535px;
+    background: #F2F2F2;
+    border-radius: 12px;
+    margin-top: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenedor__formulario .detalles .detalles__prod {
+    display: flex;
+    width: 100%;
+    padding-left: 1rem;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.contenedor__formulario .detalles .detalles__prod img {
+    width: 125.7px;
+    height: 135.91px;
+    border-radius: 15px;
+}
+
+.contenedor__formulario .detalles .detalles__prod .detalles__prod--info p {
+    font-family: var(--fMontserrat);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #4E5150;
+}
+
+.contenedor__formulario .detalles .detalles__prod .detalles__prod--info .detalles__prod--info--precio {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.contenedor__formulario .detalles .detalles__prod .detalles__prod--info .detalles__prod--info--precio .old {
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: line-through;
+
+    color: #4E5150;
+}
+
+.contenedor__formulario .detalles .detalles__prod .detalles__prod--info .detalles__prod--info--precio .offer {
+    font-size: 16px;
+    line-height: 20px;
+
+    /* Orange */
+    color: #F2994A;
+}
+
+.contenedor__formulario .detalles .detalles__prod .detalles__prod--info .detalles__prod--info-cantidad {
+    width: 134.25px;
+    height: 52px;
+    /* Gray 3 */
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenedor__formulario .detalles .detalles__prod .detalles__prod--info .detalles__prod--info-cantidad button {
+    background: #E0E0E0;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 21px;
+    height: 21px;
+    color: #828282;
+    font-weight: 600;
+
+}
+
+.contenedor__formulario .detalles .detalles__prod .detalles__prod--info .detalles__prod--info-cantidad button:hover {
+    cursor: pointer;
+}
+
+.contenedor__formulario .detalles .detalles__precio--final {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-bottom: 1rem;
+}
+
+.contenedor__formulario .detalles .detalles__precio--final>div {
+    border-top: 1px solid #BDBDBD;
+}
+
+.contenedor__formulario .detalles .detalles__precio--final .shipping .shipping--text,
+.total .total--text {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--fMontserrat);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    /* Gray 1 */
+    color: #333333;
+}
+
+.contenedor .footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.contenedor .footer p {
+    font-family: var(--fMontserrat);
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #BDBDBD;
+}
+
+@media (max-width: 819px) {
+    .contenedor__formulario {
+        flex-direction: column-reverse;
+    }
+
+    .contenedor__formulario .formulario {
+        width: 100%;
+    }
+
+    .contenedor__formulario .detalles {
+        margin: 2rem auto;
+        width: 100%;
+    }
+}
+
+/*background-image: url(../img/icons8-de-acuerdo-48.png);
+    background-color: green;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;*/
+
+/*border: 1px solid #828282;
+box-sizing: border-box;
+border-radius: 12px;*/
